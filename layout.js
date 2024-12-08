@@ -5,38 +5,16 @@ document.getElementById("bar-icon").addEventListener("click", function () {
     myModal.show()
 });
 
-// var showTheNavItemsOnClick = () => {
-//     let navBarList = document.getElementById("navToShowOnclick");
-//     navBarList.style.display = 'flex';
-
-//     let navBarListItems = document.getElementsByClassName("");
-//     for (let i = 0; i < navBarListItems.length; i++) {
-//         navBarListItems[i].classList.add("fade");
-//         setTimeout(() => {
-//             navBarListItems[i].classList.add("show"); // Adding show class to trigger fade-in
-//         }, 100);
-//     }
-//     let alertBox = document.getElementsByClassName("alert")[0];
-//     if (alertBox) {  // Optional check for element existence
-//         alertBox.style.display = 'none';
-//     }
-// }
-
 var showTheNavItemsOnClick = () => {
     let navBarList = document.getElementById("navToShowOnclick");
-
-    // Make the navBarList visible (it should already have display: flex in CSS)
     navBarList.style.display = "flex";
-
     let navBarListItems = document.getElementsByClassName("nav-link");
     for (let i = 0; i < navBarListItems.length; i++) {
-        // Add the .show class after a slight delay to trigger the transition
         setTimeout(() => {
             navBarListItems[i].classList.add("show");
-        }, 200); // Staggered effect for each item
+        }, 200);
     }
 
-    // Hide the alert box if it exists
     let alertBox = document.getElementsByClassName("alert")[0];
     if (alertBox) {
         alertBox.style.display = 'none';
