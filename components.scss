@@ -1,0 +1,372 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-link {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out !important;
+}
+
+.nav-link.show {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.navbar {
+
+    .navbar-nav {
+        display: none;
+
+        @include respond-to(md) {
+            display: none !important;
+        }
+
+
+        .nav-item {
+            font-weight: 400;
+            font-size: medium;
+
+            a:hover {
+                color: $primaryColor;
+                font-weight: 700;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+#header-logo {
+    position: relative;
+    display: inline-block;
+
+    #logo {
+        width: 7.6rem;
+        height: auto;
+    }
+
+    #logo-text-animation {
+        color: #000000;
+        font-size: medium;
+        position: absolute;
+        left: 0;
+        top: 4px;
+        transform: translateX(-20px);
+        opacity: 0;
+        transition: transform 1.3s ease, opacity 1.3s ease;
+    }
+
+    &:hover #logo-text-animation {
+        transform: translateX(30px);
+        opacity: 1;
+    }
+}
+
+#nBar-last2-btns-d {
+    #nav-btn {
+        font-size: 1rem;
+        transition: font-size 0.3s ease-in;
+        width: 9rem;
+        height: 2.5rem;
+
+        &:hover {
+            font-size: 1.05rem;
+            background: linear-gradient(to right, #000000, #52268D);
+            color: #ffffff;
+        }
+    }
+
+    #bar-icon {
+        border-radius: 50px;
+        @include roundedBorder;
+        padding: 6px 8px;
+        margin-left: 12px;
+
+        &:hover {
+            background: linear-gradient(to right, #000000, #52268D);
+            color: #ffffff;
+        }
+    }
+
+    .navbar-toggler-icon {
+        font-size: medium;
+        color: #ffffff;
+    }
+}
+
+.modal {
+    .modal-dialog {
+        width: 45%;
+        height: auto;
+
+        @include respond-to(md) {
+            width: 90%;
+            height: auto;
+            margin: auto;
+        }
+
+    }
+
+    .modal-content {
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.8);
+        background: radial-gradient(at bottom right, #52268D, #000000 50%);
+        border-radius: 30px;
+        color: #ffffff;
+
+        .modal-header {
+            border-bottom: none;
+        }
+
+        .btn-close {
+            @include roundedBorder;
+            border-radius: 50px;
+            background-color: $primaryBorderColor;
+            width: 2rem;
+            height: 2rem;
+            padding: 0.5rem;
+            font-size: 1.2rem;
+            box-shadow: none !important;
+        }
+
+        .modal-body {
+            width: 350px;
+            height: auto;
+
+            p {
+                font-size: larger;
+            }
+
+            ul li {
+                list-style-type: none;
+                @include respond-to(sm) {
+                    // margin-bottom: 10px;
+                }
+
+                h3 {
+                    font-size: 2.5rem;
+                    position: relative;
+                    transition: color 0.5s ease-in, transform 0.5s ease-in;
+                    transform: scale(1);
+
+                    @include respond-to(md) {
+                        font-size: 1.5rem;
+                    }
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 0;
+                        height: 3px;
+                        background-color: #ffffff;
+                        transition: width 0.5s ease, opacity 0.3s ease;
+                        position: absolute;
+                        bottom: -10px;
+                        opacity: 0;
+                        // margin-bottom: 10px;
+
+                        @include respond-to(sm){
+                            bottom: -5px;
+
+                        }
+                    }
+
+                    &:hover {
+                        transform: scale(1.03);
+                    }
+
+                    &:hover::after {
+                        width: 70%;
+                        opacity: 1;
+
+                        @include respond-to(md) {
+                            width: 50%;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .modal-footer {
+
+            ul li h5 {
+
+                color: #b3b3b3;
+                transition: color 0.3s;
+
+                @include respond-to(md) {
+                    font-size: small;
+                }
+
+                &:hover {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+.hero_text_section {
+    // margin: 16.625rem 8.6875rem;
+    // height: 100%;
+    // width: 100%;
+
+    #hero-text-hvrEfct {
+        transition: color 0.3s ease, letter-spacing 0.5s ease;
+    }
+
+    #hero_text {
+        // width: 76.37rem;
+        // height: 18.75rem;
+        // width: 63.64%;
+        // height: 27.78%;  
+        width: 100%;
+        // line-height: 5.625rem;
+        // border: 2px solid pink;
+
+        &:hover #hero-text-hvrEfct {
+            letter-spacing: 3px;
+            color: $primaryColor;
+        }
+
+        .h1 {
+            font: bolder clamp(2rem, 6vw, 4rem) 'onest', sans-serif;
+            color: black;
+            margin-bottom: 1rem;
+
+            @include respond-to(md) {
+                font-size: 5vw;
+            }
+
+            @include respond-to(sm) {
+                font-size: 6vw;
+            }
+        }
+
+        p {
+            font: 1.2rem 'onest', sans-serif;
+            color: #444;
+            margin-bottom: 2rem;
+
+            @include respond-to(md) {
+                font-size: clamp(0.8rem, 1.5vw, 1.10rem);
+            }
+
+        }
+
+    }
+}
+
+#text-btn-div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1rem;
+
+    button {
+        // width: 15.3125rem;
+        // height: 3.4375rem;
+        // width: 12.75vw;
+        // height: 2.86vw;
+        // margin-left: -12px;
+        // width: clamp(5rem, 15.3125vw, 20rem);
+        // height: clamp(2rem, 3.4375vw, 5vw);
+        width: clamp(10rem, 15vw, 18rem);
+        height: clamp(2.5rem, 3.5vw, 4rem);
+        font-size: clamp(1rem, 1.5vw, 1rem);
+        background: #fff;
+        color: black;
+        border: 2px solid #ddd;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background: $primaryBackgroundHoverEfct;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        @include respond-to(sm) {
+            background: $primaryBackgroundHoverEfct;
+            color: white;
+
+        }
+
+        @include respond-to(md) {
+            font-size: clamp(0.5rem, 2vw, 3vw);
+            width: clamp(12rem, 20vw, 18rem);
+            height: clamp(2.8rem, 4vw, 5rem);
+        }
+    }
+}
+
+.alert {
+    font: normal clamp(0.5rem, 1vw, 1.2vw) 'onest', sans-serif !important;
+    outline: 0.1px solid #444;
+    border-radius: 50px !important;
+    width: 45%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+
+    @include respond-to(md) {
+        width: 60%;
+    }
+
+    @include respond-to(xs) {
+        width: 80%;
+        border-radius: 10px !important;
+        font-size: clamp(0.2rem, 0.6vw, 0.7vw);
+        flex-direction: column;
+    }
+
+    .btn-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: large;
+        margin: 4px 6px 0 0;
+        z-index: 2;
+
+        @include respond-to(md) {
+            font-size: small;
+        }
+
+        @include respond-to(xs) {
+            top: 10px;
+            right: 10px;
+            font-size: small;
+        }
+    }
+
+    span {
+        margin: 0 10px;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .alert_box_btn {
+        font: normal clamp(0.5rem, 1vw, 1.2vw) 'onest', sans-serif;
+        width: auto;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border: none;
+        border-radius: 30px;
+        background: linear-gradient(to right, #000000, #52268D);
+        color: white;
+        transition: background-color 0.3s ease;
+
+        @include respond-to(md) {
+            margin-left: 1rem; 
+        }
+
+        @include respond-to(xs) {
+            margin-top: 0.5rem;
+        }
+    }
+}

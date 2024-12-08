@@ -1,0 +1,132 @@
+/* body{ */
+/* font-family: onest-sans-serif; */
+/* } */
+/* :root{
+
+} */
+/* #logo{
+    width: 7.6rem;
+    height: auto;
+}
+#header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo-text-animation{
+    color: #000000;
+    transform: translateX(100px);
+    opacity: 0.2;
+    transition: transform 1s ease;
+}
+.navbar-brand:hover{
+   transform: translateX(0);
+   opacity: 1;
+}
+
+#header-logo:hover #logo-text-animation {
+    transform: translateX(0);
+    opacity: 1
+} */
+.navbar #navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid pink;
+}
+.navbar #navbar-container #header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar #collapsibleNavbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 250px;
+}
+
+#logo {
+  width: 7.6rem;
+  height: auto;
+}
+
+/* Header container styles */
+#header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Text animation styles */
+#logo-text-animation {
+  color: #000000;
+  margin-left: -130px;
+  opacity: 0;
+  transition: margin-left 1s ease;
+  font-size: medium;
+}
+
+#header-logo:hover #logo-text-animation {
+  margin-left: -100px;
+  opacity: 1;
+}
+
+#wrapper-div {
+  height: 200vh;
+}
+
+#nav-btn {
+  border: 1px solid;
+  border-radius: 50px;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+a:hover {
+  /* color: #52268D; */
+  /* color: purple; */
+  /* color: rgb(243, 169, 243); */
+  font-weight: bold;
+  fill: rgb(243, 169, 243);
+}
+
+#bar-icon {
+  border: 1px solid;
+  border-radius: 50px;
+  padding: 6px 8px;
+  margin-left: 12px;
+}
+
+#nav-btn:hover,
+#bar-icon:hover {
+  /* background-color: #52268D; */
+  background: linear-gradient(to right, #000000, #52268D);
+  color: #ffffff;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  /* Change the icon color on hover to white (#ffffff) */
+}
+
+.nav-item {
+  color: var(#52268D);
+}
+.nav-item .nav-link {
+  text-decoration: none;
+}
+.nav-item:hover {
+  font: medium bold;
+}
+
+#header-logo #logo {
+  width: 7.6rem;
+  height: auto;
+}
+
+/*# sourceMappingURL=styles.scss.map */
