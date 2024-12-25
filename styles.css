@@ -481,7 +481,7 @@ li:hover {
 }
 .company-info-section .images-container .portrait-image,
 .company-info-section .images-container .vertical-image {
-  text-align: center;
+  text-align: start;
 }
 .company-info-section .images-container .portrait-image img,
 .company-info-section .images-container .vertical-image img {

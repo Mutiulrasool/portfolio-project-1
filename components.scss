@@ -376,13 +376,10 @@
 
 #section2 {
 
-    // border: 5px solid pink;
     @include respond-to(sm) {
         padding: 0;
         margin: 0;
     }
-
-    // width: 100%;
 
 
     #firstchlddivofsctn2 {
@@ -519,7 +516,7 @@
 
         .portrait-image,
         .vertical-image {
-            text-align: center;
+            text-align: start;
 
             img {
                 width: 100%;
