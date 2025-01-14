@@ -63,3 +63,53 @@ li:hover {
     }
 }
 
+
+#sctn3 {
+    width: 100%;
+    height: auto;
+
+    #wrapper-d-ofSctn3 {
+        // border: 3px solid orange;
+        
+        .heading-d-ofSctn3{
+            // border: 3px solid green;
+            display: flex;
+            justify-content: space-between;
+           @include respond-to(sm){
+
+            // display: block;
+            // text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            }
+        }
+        .fourSm-disc-d-ofSctn3 { // Correct class name based on your HTML
+            display: flex; // Add this to make it flexible if required
+            justify-content: space-evenly;
+            // border: 3px solid orange;
+            flex-direction: column;
+
+            .childs-ofSm-disc-sctn {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+
+                @include respond-to(md) {
+                    margin-top: 2rem;
+                    text-align: center;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+            }
+           
+              
+        }
+    }
+}
+
+
+
+
+  

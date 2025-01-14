@@ -586,3 +586,116 @@
         }
     }
 }
+
+// #sctn3 {
+//     width: 100%;
+//     height: auto;
+//     background-color: #000;
+
+//     #wrapper-d-ofSctn3 {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+
+//         .heading-d-ofSctn3 {
+//             :nth-child(1) p {
+//                 span {
+//                     font: bolder clamp(2rem, 3vw, 2.5rem) 'onest', sans-serif;
+//                     color: #fff;
+//                 }
+
+//                 color: #fff;
+//                 font: normal clamp(1rem, 2vw, 1.5rem) 'onest', sans-serif,
+//                 sans-serif;
+//             }
+
+//             :nth-child(2) p {
+//                 font: normal clamp(0.5rem, 1.5vw, 0.8rem) 'onest', sans-serif;
+//                 color: #fff;
+//             }
+//         }
+
+
+
+//     }
+// }
+#sctn3 {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+
+    #wrapper-d-ofSctn3 {
+        .heading-d-ofSctn3 {
+            margin-bottom: 3%;
+            // border: 2px solid orange;
+            align-items: center;
+            :nth-child(1) p {
+                span {
+                    font: bolder clamp(2.5rem, 4vw, 3rem) 'onest', sans-serif;
+                    color: #fff;
+                }
+
+                color: #fff;
+                font: normal clamp(1.5rem, 2vw, 2rem) 'onest',
+                sans-serif,
+                sans-serif;
+            }
+
+            :nth-child(2) p {
+                font: normal clamp(0.5rem, 1.5vw, 0.8rem) 'onest', sans-serif;
+                color: #fff;
+            }
+        }
+
+        .fourSm-disc-d-ofSctn3 {
+            
+            .childs-ofSm-disc-sctn {
+                margin-bottom: 3%;
+
+                img {
+                    color: #fff;
+                    max-width: 100%;
+                    opacity: 0.8;
+                }
+
+                h1 {
+                    color: #fff;
+                    opacity: 0.5;
+                    transition: opacity 0.5s ease-out;
+                    font: normal clamp(1.5rem, 3vw, 2rem) 'onest', sans-serif;
+
+                }
+
+                &:hover {
+
+                    img,
+                    h1 {
+                        opacity: 1;
+                    }
+                }
+
+                p {
+                    color: #fff;
+                    font: normal clamp(0.5rem, 2vw, 0.8rem) 'onest', sans-serif;
+                }
+
+                button {
+                    border: 1px solid #fff;
+                    
+                    color: #fff;
+                    padding: 8px 20px;
+                    font-size: smaller;
+                    // font: normal clamp(0.8rem, 2.5vw, 1.2rem);
+                    transform: scale(1);
+                    transition: transform 0.5s ease-out, font 0.5s ease-out;
+
+                    &:hover {
+                        transform: scale(1.03);
+                        background: $primaryBackgroundHoverEfct;
+                    }
+                }
+            }
+        }
+    }
+}

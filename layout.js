@@ -28,5 +28,3 @@ document.getElementsByClassName("closeAlert&showNavItems")[1].addEventListener("
 
 
 
-
-
