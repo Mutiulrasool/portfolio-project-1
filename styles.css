@@ -84,6 +84,46 @@ li:hover {
   }
 }
 
+.sctn4 {
+  width: 100vw;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sctn4 .sctn4-parent-d {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sctn4 .sctn4-parent-d .chld1-of-sctn4-PD :nth-child(1) .custom-font-size {
+  font-size: 3rem;
+}
+.sctn4 .sctn4-parent-d .chld1-of-sctn4-PD :nth-child(3) {
+  font-size: 0.8rem;
+  line-height: normal;
+}
+.sctn4 .sctn4-parent-d .chld3-of-sctn4-PD {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5px;
+  padding: 30px 0px;
+}
+.sctn4 .sctn4-parent-d .chld3-of-sctn4-PD > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 575.98px) {
+  .sctn4 .sctn4-parent-d .chld3-of-sctn4-PD > div {
+    margin-top: 4px;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -489,8 +529,7 @@ li:hover {
     margin: 0 auto;
   }
   .company-info-section .short-disc-container .shortDiscAboutWork {
-    flex-direction: column;
-    text-align: center;
+    justify-content: center;
   }
   .company-info-section .short-disc-container .shortDiscAboutWork img {
     margin-bottom: 0.5rem;
@@ -575,8 +614,6 @@ li:hover {
   }
 }
 #sctn3 {
-  width: 100%;
-  height: auto;
   background-color: #000;
 }
 #sctn3 #wrapper-d-ofSctn3 .heading-d-ofSctn3 {
@@ -628,6 +665,23 @@ li:hover {
 #sctn3 #wrapper-d-ofSctn3 .fourSm-disc-d-ofSctn3 .childs-ofSm-disc-sctn button:hover {
   transform: scale(1.03);
   background: linear-gradient(to right, #000000, #52268D);
+}
+
+.sctn4 {
+  background-color: #fff;
+  padding: 30px 0px;
+}
+.sctn4 .sctn4-parent-d .chld1-of-sctn4-PD {
+  line-height: 2.5rem;
+}
+.sctn4 .sctn4-parent-d .chld1-of-sctn4-PD .custom-font-size {
+  font-size: 3rem;
+}
+.sctn4 .sctn4-parent-d .chld2-of-sctn4-PD {
+  width: 100%;
+}
+.sctn4 .sctn4-parent-d .chld4-of-sctn4-PD div .txt-sctn4-withStrokeLine {
+  font: normal 0.8rem "onest", sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */
